@@ -1,0 +1,234 @@
+.auth_container{
+    max-width: 1400px;
+    position: relative;
+}
+.back_to_main{
+    position: absolute;
+    top: -40px;
+    left: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.back_icon{
+    margin-right: 15px;
+}
+.back_text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #676A71;
+}
+.auth{
+    margin: 80px 115px;
+}
+.auth_content{
+    width: 430px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+}
+.auth_header{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #231F20;
+}
+.auth_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.auth_label{
+    display: inline;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #676A71
+}
+.wrap{
+    position: relative;
+    height: 56px;
+    margin-bottom: 20px;
+}
+.auth_input{
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    padding: 18.5px 18px;
+    outline: none;
+    border: none;
+    background-color: #F6F6F9;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #231F20;
+}
+.auth_input::placeholder{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #C6C6C6;
+}
+.checkbox{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.check_label{
+	display: block;
+	margin: 0 0 10px 0;
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+}
+.check_label input[type=checkbox] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.check_label span {
+	display: inline-block;
+	position: relative; 
+	margin-left: 20px;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #A8AAAE;    
+}
+.check_label span:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: -20px;
+	top: 2px;
+	transition: background 0.3s ease;
+	background: url('../../../public/unselected-enabled.svg') no-repeat;
+}
+.check_label input[type='checkbox']:checked + span:before {
+	background-image: url('../../../public/checked-enabled.svg') !important;
+}
+.check_label input[type='checkbox']:hover + span:before {
+	background-image: url('../../../public/hover-enabled.svg');
+}
+.check_label input[type=checkbox]:disabled + span:before {
+    background-image: url('../../../public/disabled-unselected.svg');
+}
+.check_label input[type=checkbox]:disabled:hover + span:before {
+    background-image: url('../../../public/hover-disabled.svg');
+}
+.check_label input[type=checkbox]:disabled:checked + span:before {
+    background-image: url('../../../public/disabled-selected.svg') !important;
+}
+.submit_btn{
+    margin-top: 20px;
+    background: #009CB4;
+    border-radius: 5px;
+    border: none;
+    padding: 15.5px 192.5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.submit_btn:hover{
+    background-color: #01B8D4;
+    transition-delay: .1s;
+    transition-duration: .2s;
+}
+.submit_btn:active{
+    background-color: #01BEDB;
+    transition-delay: .1s;
+    transition-duration: .2s;
+}
+.remember_link{
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    text-decoration-line: underline;
+    color: #009CB4;
+}
+.links_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+.link{
+    width: 430px;
+    text-align: center;
+    padding: 20px 10px;
+    border: 1px solid #EDEDF4;
+    border-radius: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #4D4D4F;
+}
+.link:hover{
+    border: 1px solid #009CB4;;
+    color: #009CB4;
+    transition-duration: .3s;
+    transition-delay: .1s;
+}
+.text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
+.register_link{
+    text-decoration-line: underline;
+    color: #009CB4;
+    cursor: pointer;
+}
+.wrong > input{
+    border: 1px solid #E0371F !important;
+}
+.wrong_password::after{
+    content: 'Неправильный пароль';
+    z-index: 99;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #E0371F;
+    position: absolute;
+}
+.right > input{
+    border: 1px solid #00B247 !important;
+}
+.right::before{
+    content: url('../../../public/Vector.svg');
+    position: absolute;
+    right: calc(-100% - 12px);
+    top: 25%;
+    z-index: 99;
+    width: 100%;
+    height: 12px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #00B247;
+}

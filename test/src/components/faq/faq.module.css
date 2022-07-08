@@ -1,0 +1,17 @@
+.faq_container{
+    max-width: 1400px;
+}
+.faq_content{
+    margin: 80px 115px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.faq_header{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #231F20;
+}

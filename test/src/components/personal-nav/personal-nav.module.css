@@ -1,0 +1,18 @@
+.navigation{
+    list-style: none;
+}
+.list_item{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 25px;
+    color: #676A71;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #EDEDF4;
+    border-radius: 3px;
+    width: 230px;
+}
+.list_icon{
+    margin-right: 10px;
+}

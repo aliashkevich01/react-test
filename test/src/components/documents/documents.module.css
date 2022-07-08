@@ -1,0 +1,51 @@
+.documents_container{
+    max-width: 1400px;
+}
+.documents_content{
+    margin: 80px 115px;
+}
+.documents_header{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #231F20;
+    margin-bottom: 0;
+}
+.documents_total_text{
+    margin-top: 10px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #4D4D4F;
+}
+.documents_count{
+    color: #009CB4;
+}
+.documents_table{
+    margin-top: 40px;
+    width: 100%;  
+}
+thead{
+    width: 100%;
+}
+.documents_info_item{ 
+    padding: 21px 80px;
+    padding-left: 0;
+}
+.documents_info_header_item{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #009CB4;
+    text-align: left;
+}
+.documents_info_time{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4D4D4F;
+}

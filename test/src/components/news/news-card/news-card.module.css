@@ -1,0 +1,25 @@
+.card_back{
+    width: 100%;
+    height: 270px;  
+}
+.card_header{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: -20px;
+    margin-bottom: 0;
+}
+.date{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 10px 0;
+}
+.date > svg{
+    margin-right: 10px;
+}
+.card_description{
+    max-width: 95%;
+}
