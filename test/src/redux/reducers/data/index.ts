@@ -9,8 +9,9 @@ export const dataReducer = (state = initialState, action: DataActionInterface) =
         registers: state.registers,
         isSortedByNum: state.isSortedByNum,
       };
+      const temp = !isSortedByNum;
       const sorted = registers.sort((a, b) => {
-        return isSortedByNum ? b.id - a.id : a.id - b.id;
+        return temp ? b.id - a.id : a.id - b.id;
       });
       return {
         ...state,
@@ -24,8 +25,9 @@ export const dataReducer = (state = initialState, action: DataActionInterface) =
         registers: state.registers,
         isSortedByName: state.isSortedByName,
       };
+      const temp = !isSortedByName;
       const sorted = registers.sort((a, b) => {
-        if (isSortedByName) {
+        if (temp) {
           return a.name > b.name ? 1 : -1;
         } else {
           return a.id > b.id ? 1 : -1;
