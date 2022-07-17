@@ -115,7 +115,6 @@ export default function AuthForm() {
                   placeholder="Введите пароль"
                   className={classes.custom_checkbox}
                   type="checkbox"
-                  disabled
                 />
                 <span>Запомнить меня на этом компьютере</span>
               </label>

@@ -9,4 +9,5 @@ export interface StateInterface {
   documents: Array<DocumentInterface>;
   qas: Array<QasInterface>;
   isSortedByNum: boolean;
+  isSortedByName: boolean;
 }

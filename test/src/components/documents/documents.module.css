@@ -37,6 +37,7 @@ thead{
     padding-left: 0;
 }
 .documents_info_header_item{
+    padding-right: 80px;
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;

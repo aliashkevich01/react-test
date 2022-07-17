@@ -7,4 +7,5 @@ export const initialState: StateInterface = {
   documents: initialDocuments,
   qas: initialQas,
   isSortedByNum: false,
+  isSortedByName: false,
 };

@@ -114,10 +114,12 @@
 	background: url('../../../public/unselected-enabled.svg') no-repeat;
 }
 .check_label input[type='checkbox']:checked + span:before {
-	background-image: url('../../../public/checked-enabled.svg') !important;
+	background-image: url('../../../public//checked-enabled.svg');
+    transition-delay: .15s;
 }
 .check_label input[type='checkbox']:hover + span:before {
 	background-image: url('../../../public/hover-enabled.svg');
+    transition-duration: .1s;
 }
 .check_label input[type=checkbox]:disabled + span:before {
     background-image: url('../../../public/disabled-unselected.svg');
@@ -126,7 +128,7 @@
     background-image: url('../../../public/hover-disabled.svg');
 }
 .check_label input[type=checkbox]:disabled:checked + span:before {
-    background-image: url('../../../public/disabled-selected.svg') !important;
+    background-image: url('../../../public/disabled-selected.svg');
 }
 .submit_btn{
     margin-top: 20px;
