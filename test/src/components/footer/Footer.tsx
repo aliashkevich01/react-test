@@ -69,7 +69,10 @@ export default function Footer() {
             2014 г
           </p>
           <h5 className={classes.footer_last_header}>Разработчик</h5>
-          <p className={classes.footer_list_item} style={{ whiteSpace: 'nowrap' }}>
+          <p
+            className={`${classes.footer_list_item} ${classes.footer_dev_info}`}
+            style={{ whiteSpace: 'nowrap' }}
+          >
             ОАО «Агентство сервисизации и реинжиниринга»
           </p>
           <p className={classes.address}>Минск, улица Клары Цеткин, 24</p>

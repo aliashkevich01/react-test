@@ -22,7 +22,7 @@ export default function MainScreen() {
           </div>
         </div>
         <div className={classes.main_image}>
-          <img src="/main-image.png" alt="main img"></img>
+          <img src="/main-image.png" alt="main img" className={classes.main_image}></img>
         </div>
       </div>
     </div>

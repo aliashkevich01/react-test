@@ -119,22 +119,28 @@ function Registers() {
               {arr.map((item) => {
                 return (
                   <tr key={item.id}>
-                    <td className={classes.registers_info_item}>
+                    <td className={classes.registers_info_item} data-label="Регистрационный номер">
                       <p className={classes.number}>#{item.id}</p>
                     </td>
-                    <td className={classes.registers_info_item}>
+                    <td
+                      className={classes.registers_info_item}
+                      data-label="Наименование программного обеспечения"
+                    >
                       <p className={classes.info_name}>{item.name}</p>
                     </td>
-                    <td className={classes.registers_info_item}>
+                    <td className={classes.registers_info_item} data-label="Код класса">
                       <p>{item.code}</p>
                     </td>
-                    <td className={classes.registers_info_item}>
+                    <td
+                      className={classes.registers_info_item}
+                      data-label="Класс программного обеспечения"
+                    >
                       <p className={classes.info_class}>{item.class}</p>
                     </td>
-                    <td className={classes.registers_info_item}>
+                    <td className={classes.registers_info_item} data-label="Дата регистрации">
                       <p>{item.date}</p>
                     </td>
-                    <td className={classes.registers_info_item}>
+                    <td className={classes.registers_info_item} data-label="Адрес сайта">
                       <a href="/" style={initialLinkStyle}>
                         {item.link}
                       </a>

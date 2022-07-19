@@ -92,3 +92,74 @@
     text-align: center;
     cursor: pointer;
 }
+@media(max-width: 1300px) {
+    .registers_info_header_item{
+        padding-right: 40px;
+    }
+    .registers_info_item{
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+}
+@media(max-width: 1200px) {
+    .registers_info_header_item{
+        padding-right: 10px;
+    }
+    .registers_info_item{
+        padding-right: 10px;
+        padding-left: 7px;
+    }
+}
+@media(max-width: 1100px) {
+    .registers_content{
+        margin: 15px 55px;
+    }
+}
+@media(max-width: 1000px) {
+    .registers_content{
+        margin: 15px;
+    }
+    .registers_info{
+        min-width: 300px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .registers_info table thead {
+        display: none;
+    }
+    .registers_info table tr {
+        display: block;
+    } 
+    .registers_info table td {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+    .registers_info table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 5px;
+    }
+}
+@media(max-width: 710px){
+    .pagination_container{
+        margin-top: 20px;
+    }
+    .left_arrow, .right_arrow{
+        margin: 0 5px;
+    }
+    .page{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+@media(max-width: 440px) {
+    .left_arrow_group, .right_arrow_group{
+        display: none;
+    }
+}
+@media(max-width: 380px) {
+    .left_arrow, .right_arrow{
+        display: none;
+    }
+}

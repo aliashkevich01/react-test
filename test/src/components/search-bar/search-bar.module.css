@@ -52,3 +52,8 @@ html{
 .svg:hover{
   fill: green;
 }
+@media (max-width: 500px) {
+  .search_bar{
+    width: 220px;
+  }
+}

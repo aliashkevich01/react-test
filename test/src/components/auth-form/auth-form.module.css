@@ -114,7 +114,7 @@
 	background: url('../../../public/unselected-enabled.svg') no-repeat;
 }
 .check_label input[type='checkbox']:checked + span:before {
-	background-image: url('../../../public//checked-enabled.svg');
+	background-image: url('../../../public/checked-enabled.svg');
     transition-delay: .15s;
 }
 .check_label input[type='checkbox']:hover + span:before {
@@ -233,4 +233,69 @@
     font-size: 12px;
     line-height: 16px;
     color: #00B247;
+}
+@media (max-width: 650px) {
+    .auth{
+        margin: 50px;
+    }
+    .back_to_main{
+        left: 50px;
+    }
+}
+@media (max-width: 540px) {
+    .auth{
+        margin: 40px 15px;
+    }
+    .back_to_main{
+        left: 25px;
+        top: -20px;
+    }
+    .right::before{
+        right: calc(-100% + 35px);
+        top: 30%;
+    }
+}
+@media (max-width: 475px) {
+    .auth_content{
+        max-width: 100%;
+        gap: 10px;
+    }
+    .auth_header{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .back_icon{
+        margin-right: 5px;
+    }
+    .auth_input{
+        width: 100%;
+        padding: 10px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .submit_btn{
+        margin-top: 20px;
+        padding: 15.5px 100px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    .link{
+        width: 100%;
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .wrong_password::after{
+        z-index: 99;
+        bottom: 0px;
+    }
+    .right::before{
+        right: calc(-100% + 35px);
+        top: 15%;
+    }
 }

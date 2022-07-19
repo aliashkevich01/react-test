@@ -23,3 +23,18 @@
 .card_description{
     max-width: 95%;
 }
+@media(max-width: 725px) {
+    .card_back{
+        background-position: left;
+        background-repeat: no-repeat;
+        height: 200px;
+    }
+    .card_header{
+        margin-top: 20px;
+    }
+}
+@media(max-width: 470px) {
+    .card_header{
+        margin-top: 0;
+    }
+}

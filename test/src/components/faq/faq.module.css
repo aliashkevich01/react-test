@@ -15,3 +15,26 @@
     line-height: 49px;
     color: #231F20;
 }
+@media(max-width: 1100px) {
+    .faq_content{
+        margin: 15px 55px;
+    }
+    .faq_header{
+        padding-top: 15px;
+    }
+}
+@media(max-width: 1000px) {
+    .faq_content{
+        margin: 15px;
+    }
+    .faq_header{
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+@media(max-width: 750px) {
+    .faq_content{
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -47,19 +47,19 @@ export default function Documents() {
             {docs.map((item) => {
               return (
                 <tr key={item.id}>
-                  <td className={classes.documents_info_item}>
+                  <td className={classes.documents_info_item} data-label="Категория">
                     <p>{item.category}</p>
                   </td>
-                  <td className={classes.documents_info_item}>
+                  <td className={classes.documents_info_item} data-label="Наименование">
                     <p className={classes.info_class}>{item.name}</p>
                   </td>
-                  <td className={classes.documents_info_item}>
+                  <td className={classes.documents_info_item} data-label="Дата">
                     <p>{item.date}</p>
                   </td>
-                  <td className={classes.documents_info_item}>
+                  <td className={classes.documents_info_item} data-label="Номер">
                     <p>{item.id}</p>
                   </td>
-                  <td className={classes.documents_info_item}>
+                  <td className={classes.documents_info_item} data-label="Содержание">
                     <div style={initialFlexStyle}>
                       <div>
                         <svg

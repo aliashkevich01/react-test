@@ -9,14 +9,12 @@ import classes from './header.module.css';
 
 function Header(props: { isAuth?: boolean }) {
   const navigate = useNavigate();
-  const name = useSelector((state: StoreInterface) => {
-    return state.auth.name;
-  });
-  const surname = useSelector((state: StoreInterface) => {
-    return state.auth.surname;
-  });
-  const isAuth = useSelector((state: StoreInterface) => {
-    return state.auth.isAuthorized;
+  const { name, surname, isAuth } = useSelector((state: StoreInterface) => {
+    return {
+      name: state.auth.name,
+      surname: state.auth.surname,
+      isAuth: state.auth.isAuthorized,
+    };
   });
   return (
     <header className={classes.header}>
@@ -29,6 +27,7 @@ function Header(props: { isAuth?: boolean }) {
             }}
           >
             <svg
+              className={classes.main_icon}
               width="170"
               height="40"
               viewBox="0 0 170 40"
